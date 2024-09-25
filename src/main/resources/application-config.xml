@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<application-config>
+	<parameters>
+		<parameter name="logging_base_path">
+			<value>/opt/app/connect/apps/vp_nuance/logs</value>
+		</parameter>
+	
+		<parameter name="dataaccess.configuration">
+			<map>
+				<parameter name="dataaccessbase.url">
+					<value></value>
+				</parameter>
+				<parameter name="dataaccessapp.name.fetch.url">
+					<value>dispatcher/?id=DataAccess&amp;format=plain</value>
+				</parameter>
+				<parameter name="dataaccessapp.name">
+					<value>telefonicaDataAccess</value>
+				</parameter>
+				<parameter name="cdplookup.url">
+					<value>/LookUpInitCDPDB</value>
+				</parameter>
+				<parameter name="ReportCall">
+					<value>/ReportCall</value>
+				</parameter>
+				<parameter name="SendSMS">
+					<value>/Corba/SendSMS</value>
+				</parameter>
+				<parameter name="SearchMobileUsageMCE">
+					<value>/MobileUsageByMsisdn</value>
+				</parameter>
+			</map>
+		</parameter>
+	
+		<parameter name="module.configuration">
+			<map>
+				<parameter name="dispatcher">
+					<value>/dispatcher</value>
+				</parameter>
+				<parameter name="Authentication">
+					<value>Authentication</value>
+				</parameter>
+				<parameter name="SimCard">
+					<value>SimCard</value>
+				</parameter>
+				<parameter name="CallSteering">
+					<value>CallSteering</value>
+				</parameter>
+				<parameter name="DSL">
+					<value>DSL</value>
+				</parameter>
+				<parameter name="K2">
+					<value>K2</value>
+				</parameter>
+				<parameter name="DataContractUpgrade">
+					<value>DataContractUpgrade</value>
+				</parameter>
+				<parameter name="ThirdPartyBlocking">
+					<value>ThirdPartyBlocking</value>
+				</parameter>
+				<parameter name="AddressTopics">
+					<value>AddressTopics</value>
+				</parameter>
+			</map>
+		</parameter>
+	
+		<parameter name="sms">
+			<map>
+				<parameter name="className">
+					<value>com.example.springsessionredis.sms.SMSServiceManagerImpl</value>
+				</parameter>
+				<parameter name="resourceLocation">
+					<value>classpath</value>
+				</parameter>
+				<parameter name="serviceFileName">
+					<value>sms/sms-service-config.xml</value>
+				</parameter>
+			</map>
+		</parameter>
+
+		<parameter name="brandcolor">
+			<map>
+				<parameter name="className">
+					<value>com.example.springsessionredis.brandcolor.BrandColorServiceManagerImpl</value>
+				</parameter>
+				<parameter name="resourceLocation">
+					<value>classpath</value>
+				</parameter>
+				<parameter name="serviceFileName">
+					<value>brandcolor/brandcolor-service-config.xml</value>
+				</parameter>
+			</map>
+		</parameter>
+	
+		 <parameter name="exittags">
+			<map>
+				<parameter name="className">
+					<value>com.example.springsessionredis.exittags.ExitTagServiceManagerImpl</value>
+				</parameter>
+				<parameter name="resourceLocation">
+					<value>classpath</value>
+				</parameter>
+				<parameter name="serviceFileName">
+					<value>exittags/exittags-service-config.xml</value>
+				</parameter>
+			</map>
+		</parameter>
+		
+		<parameter name="ClientClassConfiguration">
+            <map>
+                <parameter name="PathToStubDataFiles">
+                    <value>classpath:/dataaccess/stubdata</value>
+                </parameter>
+                <parameter name="Default">
+                    <list>
+                        <value>com.example.springsessionredis.client.AuthenticateUserDefaultImpl</value>
+                    </list>
+                </parameter>
+                <parameter name="Stub">
+                    <list>
+                        <value>com.example.springsessionredis.client.AuthenticateUserStubImpl</value>
+                    </list>
+                </parameter>
+            </map>
+   		</parameter>
+	</parameters>
+</application-config>

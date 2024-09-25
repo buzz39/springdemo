@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application-config>
+
+	<!-- 
+		Filename of default file.
+	 -->
+    <parameter name="DataFile">
+         <value>brandcolor/brandcolor.xml</value>
+    </parameter>
+    
+	<!-- 
+		Value in seconds between checking the files for updates.
+	 -->
+	<parameter name="UpdateFrequency">
+         <value>3600</value>
+    </parameter>
+
+</application-config>

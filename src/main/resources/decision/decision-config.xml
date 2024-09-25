@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<decision-library>
+    <decision-states>
+		<decision-state id="hl0010_WhatsNext_DS" classname="com.nuance.ps.telefonica.decisions.WhatsNext" />
+		<decision-state id="sv8015_SMSPossible_DS" classname="com.nuance.ps.telefonica.decisions.SMSPossible" />
+		<decision-state id="sv8020_ConfirmationNeeded_DS" classname="com.nuance.ps.telefonica.decisions.ConfirmationNeeded" />
+		<decision-state id="ReturnFromDSL" classname="com.nuance.ps.telefonica.decisions.ReturnFromDSL" />
+		<decision-state id="ReturnFromSim" classname="com.nuance.ps.telefonica.decisions.ReturnFromSim" />
+		<decision-state id="ReturnFromAdressTopics" classname="com.nuance.ps.telefonica.decisions.ReturnFromAddressTopics" />
+		<decision-state id="ReturnFromAuthentication" classname="com.nuance.ps.telefonica.decisions.ReturnFromAuthentication" />
+		<decision-state id="ReturnFromDataContractUpgrade" classname="com.nuance.ps.telefonica.decisions.ReturnFromDataContractUpgrade" />
+		<decision-state id="ReturnFromThirdPartyBlocking" classname="com.nuance.ps.telefonica.decisions.ReturnFromThirdPartyBlocking" />
+    </decision-states>
+</decision-library>
+
